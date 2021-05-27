@@ -60,15 +60,11 @@
     </div>
   </div>
 </div>
-    <p class="username">{{ currentUser.username }}'s posts:</p>
-    <ul>
-      <li v-for="post in posts" :key="post.id">{{ post.content }}</li>
-    </ul>
-    <div>
+    
       <input v-model="newPostContent" />
       <button @click="addPost()">Add Post</button>
     </div>
-  </div>
+  
 </template>
 
 <script>
